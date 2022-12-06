@@ -8,7 +8,8 @@ const isCorrect = function() {
     const value = (document.getElementById("input").value).toLowerCase();
     if (value == response[0] || value == response[1]){
         document.getElementById("segunda-dobra").classList.remove('hide-me');
-        window.scrollTo(0, document.body.scrollHeight)
+        window.scrollTo(0, document.body.scrollHeight);
+        document.getElementById("primeira-dobra").classList.add('hide-me');
     } else{
         document.getElementById("response").classList.add('wrong');
         document.getElementById("input").value = "";
