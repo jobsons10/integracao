@@ -6,6 +6,7 @@ document.getElementById("input").placeholder=randomPhrase;
 
 const isCorrect = function() {
     const value = (document.getElementById("input").value).toLowerCase();
+
     if (value == response[0] || value == response[1] || value == response[2] || value == response[3]){
         document.getElementById("segunda-dobra").classList.remove('hide-me');
         window.scrollTo(0, document.body.scrollHeight);
@@ -16,6 +17,12 @@ const isCorrect = function() {
 
     }
 }
+
+$("#input").keypress(function(event) {
+    if (event.keyCode === 13) {
+        $("#but").click();
+    }
+});
 
 const wrongReset = function() {
     document.getElementById("response").classList.remove('wrong');
