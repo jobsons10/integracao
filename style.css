@@ -21,11 +21,13 @@
 	}
 }
 
+
 body .roda{
-    width: 100vw;
+    width: 70vw;
     position: absolute;
     animation: loading 10s linear infinite;
     z-index: 0;
+    border-radius: 50%;
 }
 
 .primeira-dobra{
